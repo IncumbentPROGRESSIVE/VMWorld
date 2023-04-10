@@ -16,8 +16,7 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			height: 100vh;
-			overflow: hidden;
+			height: 300vh; /* set the height to triple the viewport height */
 		}
 		
 		button {
@@ -34,6 +33,23 @@
 		button:hover {
 			background-color: #4B0082;
 		}
+
+		#textbox {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 2em;
+			font-weight: bold;
+			text-align: center;
+			width: 80%;
+			max-width: 800px;
+			background-color: white;
+			color: black;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+		}
 	</style>
 	<script>
 		window.onload = function() {
@@ -49,7 +65,9 @@
 	</script>
 </head>
 <body>
-	<h1>Virtual machine WRLD</h1>
+	<div id="textbox">The Virtual Machine World is coming</div>
 	<button>Change Color</button>
+	<h1>Hello World!</h1>
 </body>
 </html>
+
